@@ -4,12 +4,7 @@ import java.io.*;
 public class wordLibrary {
 	public static void main (String[] args) throws Exception {
 
-		Scanner sc = new Scanner(System.in);
-		BufferedReader infile = new BufferedReader( new FileReader("Dictionary.txt", true));	//to read
-		BufferedWriter tofile = new BufferedWriter(new FileWriter("Dictionary.txt", true));		//to write
-
-		System.out.print("1. View Dictionary /n2.Add Entry/n");
-		sel = sc.nextInt(); 
+		StringBuffer infile = new StringBuffer(); 
 
 		switch (sel) {
 			case 1: 
