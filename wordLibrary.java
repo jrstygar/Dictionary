@@ -22,7 +22,11 @@ public class wordLibrary {
 				String word = sc.next();
 				System.out.print("Definition: ");
 				String definition = sc.next();
-				Entry(word, definition); 
+				Entry(word, definition);
+				
+			default: 
+				System.out.print("Sorry try again");
+				System.exit(0);
 		}
 
 
